@@ -25,17 +25,20 @@
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="3dp"
-                android:textSize="26dp"
+                android:textSize="16dp"
                 android:textColor="#0B4893"
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="Gym" />
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="normal"
+                android:textSize="10dp"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="6dp"
                 android:text="@string/lorem_ipsum"/>
         </LinearLayout>
 
