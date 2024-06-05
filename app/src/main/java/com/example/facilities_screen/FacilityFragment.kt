@@ -43,8 +43,16 @@ class FacilityFragment : Fragment() {
         recyclerView.adapter = GridAdapter(getItems())
         return view
     }
-    private fun getItems(): List<String> {
-        return listOf("Gym", "Club House", "Swimming Pool", "Banquet hall", "Meeting Room", "Mini Theater")
+    private fun getItems(): List<Facility_items> {
+        var imgs= arrayListOf(R.drawable.gym,R.drawable.club_house,R.drawable.swimming_pool,R.drawable.banquet_hall,R.drawable.meeting_room,R.drawable.gaming)
+        var text= arrayListOf("Gym", "Club House", "Swimming Pool", "Banquet hall", "Meeting Room", "Mini Theater")
+        var cards= arrayListOf<Facility_items>()
+        for(i in text.indices)
+        {
+             val c=Facility_items(imgs[i],text[i])
+            cards.add(c)
+        }
+        return cards
     }
     companion object {
         /**

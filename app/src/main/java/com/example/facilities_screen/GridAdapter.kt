@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class GridAdapter(private val items: List<String>) : RecyclerView.Adapter<GridAdapter.ViewHolder>() {
+class GridAdapter(private val items: List<Facility_items>) : RecyclerView.Adapter<GridAdapter.ViewHolder>() {
 
     inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val itemImage: ImageView = view.findViewById(R.id.item_image)
@@ -22,8 +22,8 @@ class GridAdapter(private val items: List<String>) : RecyclerView.Adapter<GridAd
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
-        holder.itemText.text = item
-        // You can set an image to holder.itemImage if you have image data
+        holder.itemImage.setImageResource(item.img)
+        holder.itemText.text = item.text
     }
 
     override fun getItemCount(): Int {
