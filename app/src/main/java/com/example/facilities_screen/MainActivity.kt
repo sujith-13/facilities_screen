@@ -1,8 +1,11 @@
 package com.example.facilities_screen
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -13,7 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val tabLayout: TabLayout = findViewById(R.id.tab_layout)
 
-        // Iterate through all tabs and set the background
+        val btn=findViewById<ImageButton>(R.id.imageButton)
+        btn.setOnClickListener {
+
+            val intent= Intent(this,Form::class.java)
+            startActivity(intent)
+        }
         for (i in 0 until tabLayout.tabCount) {
             val tab = tabLayout.getTabAt(i)
             if (tab != null) {

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Form">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:elevation="16dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="24dp"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/textView2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Invoice Number"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="16dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:fontFamily="@font/poppins"
+                  android:textFontWeight="300"
+
+                  android:background="@drawable/input_backgroud"
+                  android:hint="RVDEF/23-24/INV1614"
+                  />
+          </com.google.android.material.textfield.TextInputLayout>
+          <TextView
+              android:id="@+id/textView3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Amount Paid"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="16dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_backgroud"
+                  android:inputType="numberDecimal"
+                  android:fontFamily="@font/poppins"
+                  android:textFontWeight="300"
+                  android:textColor="#717171"
+                  android:hint="240" />
+          </com.google.android.material.textfield.TextInputLayout>
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Paid On"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="16dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_backgroud2"
+                  android:inputType="date"
+                  android:fontFamily="@font/poppins"
+                  android:textFontWeight="300"
+                  android:textColor="#717171"
+                  android:hint="DD/MM/YYYY" />
+          </com.google.android.material.textfield.TextInputLayout>
+          <TextView
+              android:id="@+id/textView5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Payment Mode"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+          <RadioGroup
+              android:layout_width="match_parent"
+              android:layout_height="70dp">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="left"
+                  android:layout_height="wrap_content">
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Net Banking"/>
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="19dp"
+                      android:text="UPI"/>
+              </LinearLayout>
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="left"
+                  android:layout_height="wrap_content">
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Cheque"/>
+                  <RadioButton
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="50dp"
+                      android:text="Cash"/>
+              </LinearLayout>
+          </RadioGroup>
+          <TextView
+              android:id="@+id/textView6"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Transaction Number"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="16dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_backgroud2"
+                  android:inputType="date"
+                  android:fontFamily="@font/poppins"
+                  android:textFontWeight="300"
+                  android:textColor="#717171"
+                  android:hint="Enter Number" />
+          </com.google.android.material.textfield.TextInputLayout>
+          <TextView
+              android:id="@+id/textView7"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Remarks"
+              android:fontFamily="@font/poppins"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/black"/>
+          <com.google.android.material.textfield.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginBottom="16dp">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_backgroud2"
+                  android:fontFamily="@font/poppins"
+                  android:textFontWeight="300"
+                  android:textColor="#717171"
+                  android:hint="Write your remarks..." />
+          </com.google.android.material.textfield.TextInputLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:gravity="center">
+              <TextView
+                  android:id="@+id/textView8"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Attach Reference"
+                  android:fontFamily="@font/poppins"
+                  android:layout_weight="0.5"
+                  android:textSize="16dp"
+                  android:textStyle="bold"
+                  android:layout_marginRight="4dp"
+                  android:textColor="@color/black"/>
+              <com.google.android.material.card.MaterialCardView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+              android:layout_weight="0.5"
+
+                  app:strokeColor="#07A4FC"
+
+                  >
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="horizontal"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="4dp"
+                      android:background="@color/white"
+                      android:gravity="center">
+                      <ImageButton
+                          android:id="@+id/imageButton2"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_margin="2dp"
+
+                          android:backgroundTint="@color/white"
+                        android:layout_weight="0.4"
+                          android:src="@drawable/solar_upload_broken" />
+                      <TextView
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Upload"
+                          android:fontFamily="@font/poppins"
+                          android:textStyle="bold"
+                          android:textSize="18dp"
+                          android:layout_marginRight="0dp"
+                          android:layout_weight="0.6"
+                          android:textColor="#07A4FC"/>
+                  </LinearLayout>
+
+              </com.google.android.material.card.MaterialCardView>
+
+
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <Button
+                  android:id="@+id/button"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Cancel"
+                  android:layout_weight="0.4"
+                  android:layout_marginTop="32dp"
+                  android:layout_marginRight="16dp"
+                  android:textColor="#29ADB2"
+                  android:background="@drawable/cancel_button"
+                  />
+
+
+              <Button
+                  android:id="@+id/save"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Save"
+                  android:backgroundTint="#29ADB2"
+                  android:textColor="@color/white"
+                  android:layout_marginTop="32dp"
+                  android:layout_weight="0.4"
+                  android:background="@drawable/button_save"
+                  />
+          </LinearLayout>
+      </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

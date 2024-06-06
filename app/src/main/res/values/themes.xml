@@ -2,8 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Facilities_screen" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+         <item name="colorPrimary">#29ADB2</item>
     </style>
 
     <style name="Theme.Facilities_screen" parent="Base.Theme.Facilities_screen" />
+    <style name="CustomTabTextAppearance" parent="@android:style/TextAppearance.Material.Body1">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontWeight">400</item>
+        <item name="android:lineHeight" tools:targetApi="p">24dp</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
 </resources>
