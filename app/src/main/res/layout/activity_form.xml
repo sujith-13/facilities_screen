@@ -26,6 +26,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Invoice Number"
+              android:textFontWeight="500"
               android:fontFamily="@font/poppins"
               android:textSize="18dp"
               android:textStyle="bold"
@@ -38,13 +39,12 @@
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
-                  android:fontFamily="@font/poppins"
-                  android:textFontWeight="300"
-
+                  android:layout_height="40dp"
                   android:background="@drawable/input_backgroud"
+                  android:fontFamily="@font/poppins"
+                 android:textColor="#B0B0B0"
                   android:hint="RVDEF/23-24/INV1614"
-                  />
+                  android:textFontWeight="400" />
           </com.google.android.material.textfield.TextInputLayout>
           <TextView
               android:id="@+id/textView3"
@@ -52,6 +52,7 @@
               android:layout_height="wrap_content"
               android:text="Amount Paid"
               android:fontFamily="@font/poppins"
+              android:textFontWeight="500"
               android:textSize="18dp"
               android:textStyle="bold"
               android:textColor="@color/black"/>
@@ -67,14 +68,16 @@
                   android:background="@drawable/input_backgroud"
                   android:inputType="numberDecimal"
                   android:fontFamily="@font/poppins"
-                  android:textFontWeight="300"
+                  android:textFontWeight="400"
                   android:textColor="#717171"
+
                   android:hint="240" />
           </com.google.android.material.textfield.TextInputLayout>
           <TextView
               android:id="@+id/textView4"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
+              android:textFontWeight="500"
               android:text="Paid On"
               android:fontFamily="@font/poppins"
               android:textSize="18dp"
@@ -92,8 +95,8 @@
                   android:background="@drawable/input_backgroud2"
                   android:inputType="date"
                   android:fontFamily="@font/poppins"
-                  android:textFontWeight="300"
-                  android:textColor="#717171"
+                  android:textFontWeight="400"
+                  android:textColor="#B0B0B0"
                   android:hint="DD/MM/YYYY" />
           </com.google.android.material.textfield.TextInputLayout>
           <TextView
@@ -102,6 +105,7 @@
               android:layout_height="wrap_content"
               android:text="Payment Mode"
               android:fontFamily="@font/poppins"
+              android:textFontWeight="500"
               android:textSize="18dp"
               android:textStyle="bold"
               android:textColor="@color/black"/>
@@ -116,11 +120,14 @@
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
+                      android:textColor="#717171"
                       android:text="Net Banking"/>
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginLeft="19dp"
+                      android:textColor="#717171"
+
                       android:text="UPI"/>
               </LinearLayout>
 
@@ -132,11 +139,15 @@
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
+                      android:textColor="#717171"
+
                       android:text="Cheque"/>
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginLeft="50dp"
+                      android:textColor="#717171"
+
                       android:text="Cash"/>
               </LinearLayout>
           </RadioGroup>
@@ -146,6 +157,7 @@
               android:layout_height="wrap_content"
               android:text="Transaction Number"
               android:fontFamily="@font/poppins"
+              android:textFontWeight="500"
               android:textSize="18dp"
               android:textStyle="bold"
               android:textColor="@color/black"/>
@@ -160,8 +172,8 @@
                   android:background="@drawable/input_backgroud2"
                   android:inputType="date"
                   android:fontFamily="@font/poppins"
-                  android:textFontWeight="300"
-                  android:textColor="#717171"
+                  android:textFontWeight="400"
+                  android:textColor="#B0B0B0"
                   android:hint="Enter Number" />
           </com.google.android.material.textfield.TextInputLayout>
           <TextView
@@ -171,6 +183,7 @@
               android:text="Remarks"
               android:fontFamily="@font/poppins"
               android:textSize="18dp"
+              android:textFontWeight="500"
               android:textStyle="bold"
               android:textColor="@color/black"/>
           <com.google.android.material.textfield.TextInputLayout
@@ -183,8 +196,8 @@
                   android:layout_height="wrap_content"
                   android:background="@drawable/input_backgroud2"
                   android:fontFamily="@font/poppins"
-                  android:textFontWeight="300"
-                  android:textColor="#717171"
+                  android:textFontWeight="400"
+                  android:textColor="#B0B0B0"
                   android:hint="Write your remarks..." />
           </com.google.android.material.textfield.TextInputLayout>
           <LinearLayout
@@ -198,6 +211,7 @@
                   android:layout_height="wrap_content"
                   android:text="Attach Reference"
                   android:fontFamily="@font/poppins"
+                  android:textFontWeight="500"
                   android:layout_weight="0.5"
                   android:textSize="16dp"
                   android:textStyle="bold"
