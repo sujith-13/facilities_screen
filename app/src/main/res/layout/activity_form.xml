@@ -111,6 +111,9 @@
               android:textColor="@color/black"/>
           <RadioGroup
               android:layout_width="match_parent"
+              android:layout_marginTop="8dp"
+              android:gravity="left"
+              android:layout_marginBottom="8dp"
               android:layout_height="70dp">
               <LinearLayout
                   android:layout_width="match_parent"
@@ -121,13 +124,14 @@
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:textColor="#717171"
+                      android:textSize="17dp"
                       android:text="Net Banking"/>
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginLeft="19dp"
                       android:textColor="#717171"
-
+                      android:textSize="17dp"
                       android:text="UPI"/>
               </LinearLayout>
 
@@ -140,14 +144,14 @@
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:textColor="#717171"
-
+                      android:textSize="17dp"
                       android:text="Cheque"/>
                   <RadioButton
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:layout_marginLeft="50dp"
+                      android:layout_marginLeft="56dp"
                       android:textColor="#717171"
-
+                      android:textSize="17dp"
                       android:text="Cash"/>
               </LinearLayout>
           </RadioGroup>
@@ -222,7 +226,8 @@
                   android:layout_height="wrap_content"
 
               android:layout_weight="0.5"
-
+                android:background="@color/white"
+                  android:backgroundTint="@color/white"
                   app:strokeColor="#07A4FC"
 
                   >

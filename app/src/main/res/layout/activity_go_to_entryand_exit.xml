@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    tools:context=".GoToEntryandExit">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:elevation="9dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center"
+        android:background="@drawable/request_linearlayout_green"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="167dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_gravity="center"
+                android:layout_height="109dp"
+                android:src="@drawable/tick" />
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="14.511628150939941sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="14.52dp"
+                android:layout_height="wrap_content"
+                android:layout_width="193dp"
+                android:gravity="center"
+                android:text="Your request has been
+successfully sent"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/go_to_entry"
+            android:elevation="21dp"
+            android:layout_marginTop="50.82dp"
+            android:gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center|bottom"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text22"
+                android:textColor="#008951"
+                android:textSize="16.32558250427246sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Go to Entry &amp; Exit List"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="298dp"
+        android:elevation="9dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        android:background="@drawable/request_linearlayout_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+        <LinearLayout
+            android:layout_width="193dp"
+            android:layout_height="167dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_gravity="center"
+                android:layout_height="109dp"
+                android:src="@drawable/cross_image" />
+            <TextView
+                android:textColor="#FFFFFF"
+                android:textSize="14.511628150939941sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:layout_marginTop="14.52dp"
+                android:layout_height="wrap_content"
+                android:layout_width="193dp"
+                android:gravity="center"
+                android:text="Your request has not been
+successfully sent"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="@drawable/go_to_entry"
+            android:elevation="21dp"
+            android:layout_marginTop="50.82dp"
+            android:gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center|bottom"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text2"
+                android:textColor="#FF4141"
+                android:textSize="16.32558250427246sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Okay"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/enter_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="224dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--<LinearLayout-->
+<!--android:id="@+id/linearLayout2"-->
+<!--android:background="#FF4141"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="298dp"-->
+<!--android:elevation="9dp"-->
+<!--android:orientation="vertical"-->
+<!--android:visibility="visible"-->
+<!--android:gravity="center"-->
+<!--app:layout_constraintBottom_toBottomOf="parent"-->
+<!--app:layout_constraintEnd_toEndOf="parent"-->
+<!--app:layout_constraintStart_toStartOf="parent">-->
+<!--<ImageView-->
+
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+
+<!--    android:src="@drawable/cross_image" />-->
+
+<!--<TextView-->
+<!--    android:id="@+id/textView2"-->
+<!--    android:textColor="#FFFFFF"-->
+<!--    android:textSize="14.518972396850586sp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:layout_marginTop="14dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_width="193dp"-->
+<!--    android:gravity="center"-->
+<!--    android:textAlignment="center"-->
+<!--    android:text="Your request has not been-->
+<!--successfully sent"-->
+<!--    />-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="354dp"-->
+<!--    android:layout_height="51dp"-->
+<!--    android:background="@drawable/go_to_entry"-->
+<!--    android:elevation="21dp"-->
+<!--    android:layout_marginTop="50dp"-->
+<!--    android:gravity="center"-->
+<!--    android:layout_marginBottom="16dp"-->
+<!--    android:layout_gravity="center|bottom"-->
+<!--    android:orientation="vertical">-->
+<!--    <TextView-->
+<!--        android:id="@+id/text"-->
+<!--        android:textColor="#FF4141"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:text="Okay"-->
+<!--        />-->
+<!--</LinearLayout>-->
+<!--</LinearLayout>-->

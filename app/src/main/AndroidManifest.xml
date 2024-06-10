@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Facilities_screen"
         tools:targetApi="31">
         <activity
+            android:name=".GoToEntryandExit"
+            android:exported="false" />
+        <activity
             android:name=".Form"
             android:exported="false" />
         <activity

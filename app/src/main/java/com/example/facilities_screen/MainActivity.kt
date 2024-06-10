@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         val btn=findViewById<ImageButton>(R.id.imageButton)
         btn.setOnClickListener {
 
-            val intent= Intent(this,Form::class.java)
+            val intent= Intent(this,GoToEntryandExit::class.java)
             startActivity(intent)
         }
         for (i in 0 until tabLayout.tabCount) {
