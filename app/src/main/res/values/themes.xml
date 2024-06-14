@@ -1,21 +1,34 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.Facilities_screen" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.Facilities_screen" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">#29ADB2</item>
+<!--         <item name="colorPrimary">#29ADB2</item>-->
     </style>
 
     <style name="Theme.Facilities_screen" parent="Base.Theme.Facilities_screen" />
     <style name="CustomTabTextAppearance" parent="@android:style/TextAppearance.Material.Body1">
         <item name="android:fontFamily">@font/poppins</item>
         <item name="android:textSize">16sp</item>
+        <item name="android:padding">10dp</item>
         <item name="android:fontWeight">400</item>
-        <item name="android:layout_width">127dp</item>
-        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:lineHeight" tools:targetApi="p">24dp</item>
         <item name="android:textAlignment">textStart</item>
     </style>
 
-
-
+    <style name="SoftCorner">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">6dp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="CalenderViewDateCustomText" parent="TextAppearance.AppCompat">
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">@font/manrope</item>
+        <item name="fontWeight">500</item>
+        <item name="android:textColor">@drawable/calender_date_selector</item>
+    </style>
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>

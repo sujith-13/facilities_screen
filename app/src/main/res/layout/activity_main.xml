@@ -9,24 +9,24 @@
     <LinearLayout
         android:id="@+id/linearLayoutt"
         android:layout_width="match_parent"
-        android:layout_height="27dp"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@color/white"
         android:orientation="horizontal">
         <ImageButton
             android:id="@+id/imageButton"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginTop="2dp"
             android:backgroundTint="@color/white"
-
             app:srcCompat="@drawable/baseline_arrow_back_ios_new_24" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textViewheading"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:fontFamily="@font/poppins"
             android:layout_marginLeft="16dp"
@@ -46,15 +46,16 @@
         app:cardCornerRadius="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@color/white"
+        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayoutt">
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_margin="3dp"
             android:layout_gravity="center_vertical"
             android:background="@drawable/tablayout_radius"
@@ -62,19 +63,19 @@
             app:tabBackground="@drawable/tab_background"
             app:tabIconTint="@color/black"
             app:tabIndicator="@color/black"
-            app:tabTextAppearance="@style/CustomTabTextAppearance"
+   app:tabTextAppearance="@style/CustomTabTextAppearance"
             app:tabSelectedTextColor="@color/white"
             app:tabTextColor="@color/black"
             >
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Facility" />
+                android:text="Facilities" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bookings" />
+                android:text="Booking" />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"

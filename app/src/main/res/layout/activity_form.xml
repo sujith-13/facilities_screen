@@ -7,7 +7,7 @@
     tools:context=".Form">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="340dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:elevation="16dp"
         app:cardCornerRadius="6dp"
@@ -34,12 +34,12 @@
 
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="wrap_content"
               android:layout_marginBottom="16dp">
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="40dp"
+                  android:layout_height="match_parent"
                   android:background="@drawable/input_backgroud"
                   android:fontFamily="@font/poppins"
                  android:textColor="#B0B0B0"
@@ -59,12 +59,12 @@
 
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="wrap_content"
               android:layout_marginBottom="16dp">
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
+                  android:layout_height="match_parent"
                   android:background="@drawable/input_backgroud"
                   android:inputType="numberDecimal"
                   android:fontFamily="@font/poppins"
@@ -86,12 +86,12 @@
 
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="wrap_content"
               android:layout_marginBottom="16dp">
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
+                  android:layout_height="match_parent"
                   android:background="@drawable/input_backgroud2"
                   android:inputType="date"
                   android:fontFamily="@font/poppins"
@@ -167,12 +167,12 @@
               android:textColor="@color/black"/>
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="wrap_content"
               android:layout_marginBottom="16dp">
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
+                  android:layout_height="match_parent"
                   android:background="@drawable/input_backgroud2"
                   android:inputType="date"
                   android:fontFamily="@font/poppins"
@@ -192,12 +192,12 @@
               android:textColor="@color/black"/>
           <com.google.android.material.textfield.TextInputLayout
               android:layout_width="match_parent"
-              android:layout_height="40dp"
+              android:layout_height="wrap_content"
               android:layout_marginBottom="16dp">
 
               <com.google.android.material.textfield.TextInputEditText
                   android:layout_width="match_parent"
-                  android:layout_height="wrap_content"
+                  android:layout_height="match_parent"
                   android:background="@drawable/input_backgroud2"
                   android:fontFamily="@font/poppins"
                   android:textFontWeight="400"
@@ -213,7 +213,7 @@
                   android:id="@+id/textView8"
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:text="Attach Reference"
+                  android:text="@string/upload_image"
                   android:fontFamily="@font/poppins"
                   android:textFontWeight="500"
                   android:layout_weight="0.5"

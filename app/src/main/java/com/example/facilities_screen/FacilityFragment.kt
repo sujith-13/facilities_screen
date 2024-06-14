@@ -40,7 +40,7 @@ class FacilityFragment : Fragment() {
         val view=inflater.inflate(R.layout.fragment_facility, container, false)
         val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
         recyclerView.layoutManager = GridLayoutManager(context, 2) // 2 columns
-        recyclerView.adapter = GridAdapter(getItems())
+        recyclerView.adapter = GridAdapter(getItems(),requireContext())
         return view
     }
     private fun getItems(): List<Facility_items> {

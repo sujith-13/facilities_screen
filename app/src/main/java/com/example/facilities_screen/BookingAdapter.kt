@@ -11,7 +11,7 @@ class BookingAdapter(private val bookingList: List<Booking>) :
     RecyclerView.Adapter<BookingAdapter.BookingViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookingViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_booking, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.booking_item, parent, false)
         return BookingViewHolder(view)
     }
 
@@ -23,7 +23,7 @@ class BookingAdapter(private val bookingList: List<Booking>) :
         holder.paymentAmount.text = booking.paymentAmount
         holder.paymentDate.text = booking.paymentDate
         holder.paymentMethod.text = booking.paymentMethod
-        val underlinedText = Html.fromHtml("<u>View Report</u>")
+        val underlinedText = Html.fromHtml("<u>View Receipt</u>")
         holder.textView.text = underlinedText
     }
 
@@ -33,7 +33,7 @@ class BookingAdapter(private val bookingList: List<Booking>) :
         val bookingId: TextView = itemView.findViewById(R.id.booking_id)
         val availDate: TextView = itemView.findViewById(R.id.avail_date)
         val bookingType: TextView = itemView.findViewById(R.id.booking_type)
-        val paymentAmount: TextView = itemView.findViewById(R.id.paymet_amount)
+        val paymentAmount: TextView = itemView.findViewById(R.id.payment_amount)
         val paymentDate: TextView = itemView.findViewById(R.id.payment_date)
         val paymentMethod: TextView = itemView.findViewById(R.id.payment_method)
         val textView = itemView.findViewById<TextView>(R.id.view_receipt)

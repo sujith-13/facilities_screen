@@ -6,6 +6,9 @@
     android:elevation="16dp"
     android:layout_margin="7dp"
     app:cardCornerRadius="8dp"
+    android:id="@+id/grid_item"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
     android:orientation="vertical">
 
         <LinearLayout
@@ -26,10 +29,10 @@
                 android:layout_width="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="3dp"
-                android:textSize="16dp"
+                android:textSize="20sp"
               android:fontFamily="@font/poppins"
                 android:ellipsize="middle"
-                android:textColor="#0B4893"
+                android:textColor="#000000"
                 android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="Gym" />
@@ -37,7 +40,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp"
                 android:textStyle="normal"
-                android:textSize="10dp"
+                android:textSize="10sp"
+                android:textColor="#707070"
                 android:fontFamily="@font/poppins"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"

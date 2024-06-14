@@ -26,7 +26,7 @@
             android:layout_height="167dp"
             android:orientation="vertical">
             <ImageView
-                android:layout_width="109dp"
+                android:layout_width="wrap_content"
                 android:layout_gravity="center"
                 android:layout_height="109dp"
                 android:src="@drawable/tick" />
@@ -37,15 +37,14 @@
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="14.52dp"
                 android:layout_height="wrap_content"
-                android:layout_width="193dp"
+                android:layout_width="wrap_content"
                 android:gravity="center"
-                android:text="Your request has been
-successfully sent"
+                android:text="Your request has been successfully sent"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_height="wrap_content"
             android:background="@drawable/go_to_entry"
             android:elevation="21dp"
             android:layout_marginTop="50.82dp"
@@ -54,6 +53,8 @@ successfully sent"
             android:layout_marginLeft="16dp"
             android:layout_marginBottom="16dp"
             android:layout_gravity="center|bottom"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
             android:orientation="vertical">
             <TextView
                 android:id="@+id/text22"
@@ -61,6 +62,7 @@ successfully sent"
                 android:textSize="16.32558250427246sp"
                 android:textStyle="bold"
                 android:gravity="center"
+                android:fontFamily="@font/poppins"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
                 android:text="Go to Entry &amp; Exit List"
@@ -72,23 +74,23 @@ successfully sent"
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="298dp"
+        android:layout_height="wrap_content"
         android:elevation="9dp"
         android:orientation="vertical"
-        android:visibility="gone"
+        android:visibility="visible"
         android:gravity="center"
         android:background="@drawable/request_linearlayout_red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
         <LinearLayout
-            android:layout_width="193dp"
-            android:layout_height="167dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
             <ImageView
-                android:layout_width="109dp"
+                android:layout_width="wrap_content"
                 android:layout_gravity="center"
-                android:layout_height="109dp"
+                android:layout_height="wrap_content"
                 android:src="@drawable/cross_image" />
             <TextView
                 android:textColor="#FFFFFF"
@@ -97,7 +99,7 @@ successfully sent"
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="14.52dp"
                 android:layout_height="wrap_content"
-                android:layout_width="193dp"
+                android:layout_width="wrap_content"
                 android:gravity="center"
                 android:text="Your request has not been
 successfully sent"
@@ -123,6 +125,7 @@ successfully sent"
                 android:textColor="#FF4141"
                 android:textSize="16.32558250427246sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/poppins"
                 android:gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
@@ -144,57 +147,3 @@ successfully sent"
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-<!--<LinearLayout-->
-<!--android:id="@+id/linearLayout2"-->
-<!--android:background="#FF4141"-->
-<!--android:layout_width="match_parent"-->
-<!--android:layout_height="298dp"-->
-<!--android:elevation="9dp"-->
-<!--android:orientation="vertical"-->
-<!--android:visibility="visible"-->
-<!--android:gravity="center"-->
-<!--app:layout_constraintBottom_toBottomOf="parent"-->
-<!--app:layout_constraintEnd_toEndOf="parent"-->
-<!--app:layout_constraintStart_toStartOf="parent">-->
-<!--<ImageView-->
-
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-
-<!--    android:src="@drawable/cross_image" />-->
-
-<!--<TextView-->
-<!--    android:id="@+id/textView2"-->
-<!--    android:textColor="#FFFFFF"-->
-<!--    android:textSize="14.518972396850586sp"-->
-<!--    android:textStyle="bold"-->
-<!--    android:layout_marginTop="14dp"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:layout_width="193dp"-->
-<!--    android:gravity="center"-->
-<!--    android:textAlignment="center"-->
-<!--    android:text="Your request has not been-->
-<!--successfully sent"-->
-<!--    />-->
-
-<!--<LinearLayout-->
-<!--    android:layout_width="354dp"-->
-<!--    android:layout_height="51dp"-->
-<!--    android:background="@drawable/go_to_entry"-->
-<!--    android:elevation="21dp"-->
-<!--    android:layout_marginTop="50dp"-->
-<!--    android:gravity="center"-->
-<!--    android:layout_marginBottom="16dp"-->
-<!--    android:layout_gravity="center|bottom"-->
-<!--    android:orientation="vertical">-->
-<!--    <TextView-->
-<!--        android:id="@+id/text"-->
-<!--        android:textColor="#FF4141"-->
-<!--        android:textSize="18sp"-->
-<!--        android:textStyle="bold"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:text="Okay"-->
-<!--        />-->
-<!--</LinearLayout>-->
-<!--</LinearLayout>-->

@@ -16,7 +16,7 @@
 
             android:layout_marginTop="16dp"
             android:id="@+id/linearLayout_filter"
-            android:visibility="visible"
+            android:visibility="gone"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal">
             <LinearLayout
@@ -27,7 +27,7 @@
                 android:paddingLeft="19dp"
                 android:paddingRight="19dp"
                 android:paddingTop="6dp"
-                android:background="@drawable/search_button"
+                android:background="@drawable/lucide_search_filter"
                 android:orientation="vertical">
 
                 <ImageView
@@ -78,7 +78,7 @@
             android:layout_height="34dp"
             android:id="@+id/linaerlayout_default"
             android:gravity="center"
-            android:visibility="gone"
+            android:visibility="visible"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal">

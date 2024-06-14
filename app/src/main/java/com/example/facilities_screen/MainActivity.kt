@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -15,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val tabLayout: TabLayout = findViewById(R.id.tab_layout)
-
+         val heading=findViewById<TextView>(R.id.textViewheading)
         val btn=findViewById<ImageButton>(R.id.imageButton)
         btn.setOnClickListener {
 
@@ -35,11 +36,13 @@ class MainActivity : AppCompatActivity() {
         tabLayout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 val tabView = (tabLayout.getChildAt(0) as ViewGroup).getChildAt(tab.position)
+                heading.text=tab.text
                 tabView.setBackgroundResource(R.drawable.tab_background_selector)
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab) {
                 val tabView = (tabLayout.getChildAt(0) as ViewGroup).getChildAt(tab.position)
+
                 tabView.setBackgroundResource(R.drawable.tab_background_selector)
             }
 
@@ -53,8 +56,8 @@ class MainActivity : AppCompatActivity() {
 
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = when (position) {
-                0 -> "Facility"
-                1 -> "Bookings"
+                0 -> "Facilities"
+                1 -> "Booking"
                 2 -> "History"
                 else -> null
             }

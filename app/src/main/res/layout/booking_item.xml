@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:padding="12dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/item_booking_card">
+
+
+    <TextView
+        android:id="@+id/bk_id"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textFontWeight="600"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Booking ID: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/booking_id"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_bold"
+        android:textFontWeight="600"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="22378965"
+        app:layout_constraintStart_toEndOf="@+id/bk_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/avdate_id"
+        android:textColor="#B0B0B0"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="400"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Availed Date: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bk_id" />
+
+    <TextView
+        android:id="@+id/avail_date"
+        android:textColor="#B0B0B0"
+        android:textSize="10sp"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="400"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="April 26, 2023, 10:00 AM - 03:00 PM"
+        app:layout_constraintStart_toEndOf="@+id/avdate_id"
+        app:layout_constraintTop_toTopOf="@+id/avdate_id" />
+
+    <TextView
+        android:id="@+id/booking_type"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textFontWeight="600"
+       android:layout_marginTop="12dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Meeting Room"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avdate_id" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:background="@drawable/history_ll_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_type">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Amount"
+            android:textColor="#000000"
+            android:textFontWeight="400"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/payment_amount"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/vector_rupee"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textFontWeight="700"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="5,000.00"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/payment_date"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="500"
+        android:drawableLeft="@drawable/lets_icons_date_range_light"
+        android:drawablePadding="5dp"
+        android:textColor="#707070"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="27/03/2024"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_ll" />
+
+    <TextView
+        android:id="@+id/payment_method"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="500"
+        android:drawableLeft="@drawable/solar_round_transfer_horizontal_broken"
+        android:drawablePadding="5dp"
+        android:textColor="#707070"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Cheque"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_date" />
+
+    <TextView
+        android:id="@+id/view_receipt"
+        android:fontFamily="@font/poppins"
+        android:textFontWeight="400"
+        android:textColor="#29ADB2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="View Receipt"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/history_ll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
